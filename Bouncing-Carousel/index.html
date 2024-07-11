@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Carousel</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Economica:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+<div class="bounce-carousel active">
+    <!-- navigation elements -->
+    <div class="navigation arrow-left prev"><img src="img/arr-left.svg" alt="Left navigation arrow" width="40"></div>
+    <div class="navigation arrow-right next"><img src="img/arr-right.svg" alt="Right navigation arrow" width="40"></div>
+
+
+    <!-- item description with hiding elements on Mobile devices  -->
+    <div class="item-properties">
+        <div class="img-title hidden-on-small">title</div>
+        <div class="img-title visible-on-small">title</div>
+        <div class="img-description hidden-on-small">property</div>
+        <div class="item-price hidden-on-small">price</div>
+        <div class="buy-btn">Buy</div>
+        <a href="#" class="item-link hidden-on-small">Photo and preview</a>
+        <a href="#" class="item-link visible-on-small">Preview</a>
+
+        <!-- carousel images -->
+        <div class="content">
+            <div class="bounce-carousel-item">
+                <img src="img/flask_new.png" alt="Fljazhka" class="pic" width="230">
+            </div>
+            <div class="bounce-carousel-item">
+                <img src="img/knife.png" alt="Knife" class="pic" width="230">
+            </div>
+            <div class="bounce-carousel-item">
+                <img src="img/watch.png" alt="Watch" class="pic" width="230">
+            </div>
+        </div>
+    </div>
+
+    <!-- animated svg -->
+    <svg viewbox="0 630 1266 200" id="bounce">
+        <path fill="#F3F5F7">
+            <animate
+                    attributeName="d"
+                    dur="0"
+                    repeatCount="0"
+                    values="M0,630
+                     C0,630 279,629 633,630
+                     C987,631 1266,630 1266,630
+                     L1266,935 L0,935 L0,630
+                     Z;"/>
+            <animate
+                    id="start"
+                    begin="bounce.click"
+                    attributeName="d"
+                    dur="1.5s"
+                    repeatCount="0"
+                    values="M0,630
+                     C0,630 279,629 633,630
+                     C987,631 1266,630 1266,630
+                     L1266,935 L0,935 L0,630
+                     Z;
+
+                     M0,630 C0,630 279,660 633,661 C987,662 1266,630 1266,630 L1266,935 L0,935 L0,630
+                     Z;
+
+                     M0,630 C0,630 279,592 633,593 C987,594 1266,630 1266,630 L1266,935 L0,935 L0,630 Z;
+
+                     M0,630 C0,630 279,652 633,653 C987,654 1266,630 1266,630 L1266,935 L0,935 L0,630 Z;
+
+                     M0,630 C0,630 279,610 633,611 C987,612 1266,630 1266,630 L1266,935 L0,935 L0,630 Z;
+
+                     M0,630 C0,630 279,639 633,640 C987,641 1266,630 1266,630 L1266,935 L0,935 L0,630 Z;
+
+                     M0,630 C0,630 279,615 633,616 C987,617 1266,630 1266,630 L1266,935 L0,935 L0,630 Z;
+
+                     M0,630
+                     C0,630 279,629 633,630
+                     C987,631 1266,630 1266,630
+                     L1266,935 L0,935 L0,630
+                     Z;
+
+                     M0,630
+                     C0,630 279,629 633,630
+                     C987,631 1266,630 1266,630
+                     L1266,935 L0,935 L0,630
+                     Z;"/>
+
+
+        </path>
+    </svg>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>
